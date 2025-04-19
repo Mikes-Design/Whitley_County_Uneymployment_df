@@ -10,13 +10,7 @@ df['Date'] = pd.to_datetime(df['Date'])
 democrat_presidents = {'Bill Clinton' : '1993-2001', 'Barack Obama' : '2009-2017', 'Biden' : '2021-2025'}
 republican_presidents = {'George Bush' : '1989-1993', 'George W Bush' : '2001-2009', 'Donald Trump' : '2017-2021'}
 
-#current uneymployment rate
-#uneymployment_2025 = df.loc[df['Date'] >= '2025-01-01']
-#plots current uneymployment rate
-#uneymployment_2025.plot(x='Date', y='Uneymployment_Rate', kind='bar', title='Current Uneymployment Rate in Whitley County', ylabel='Uneymployment Rate (%)', xlabel='Date')
-
-fig, ax = plt.subplots(figsize=(15, 8))
-
+# Define colors for each president
 dem_colors = {
     'Bill Clinton': 'royalblue',
     'Barack Obama': 'dodgerblue',
@@ -68,6 +62,12 @@ ax.legend()
 
 plt.tight_layout()
 plt.show()
+
+#current uneymployment rate
+#uneymployment_2025 = df.loc[df['Date'] >= '2025-01-01']
+#plots current uneymployment rate
+#uneymployment_2025.plot(x='Date', y='Uneymployment_Rate', kind='bar', title='Current Uneymployment Rate in Whitley County', ylabel='Uneymployment Rate (%)', xlabel='Date')
+
 
 
 
